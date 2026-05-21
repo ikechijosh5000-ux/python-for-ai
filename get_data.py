@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 # Calculate dates
 today = datetime.now()
-week_ago = today - timedelta(days=10)
+week_ago = today - timedelta(days=7)
 
 # Format dates for API (YYYY-MM-DD)
 start_date = week_ago.strftime("%Y-%m-%d")
@@ -37,6 +37,7 @@ df['date'] = pd.to_datetime(df['date'])
 
 print(df)
 
+
 #----------------------------------
 
 # Create the plot
@@ -45,7 +46,7 @@ plt.figure(figsize=(10, 5))
 # Add labels and title
 plt.xlabel('Date')
 plt.ylabel('Temperature (°C)')
-plt.title('Lagos Weather - Past 10 Days')
+plt.title('Lagos Weather - Past 7 Days')
 plt.legend()
 
 # Rotate x-axis labels for readability
