@@ -66,3 +66,4 @@ if not os.path.exists('data'):
 # Save to CSV
 df.to_csv('data/lagos_weather.csv', index=False)
 print("Data saved to data/lagos_weather.csv")
+print("Plot saved as weather_chart.png")
