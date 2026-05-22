@@ -1,13 +1,13 @@
+import os
+
 # This keeps running even if file doesn't exist
 try:
-    with open('sales-analysis/output/sales_data.json', 'r') as file:
+    with open("sales-analysis/output/sales_data.json", "r") as file:
         content = file.read()
 except FileNotFoundError:
     print("Could not find data.txt")
     content = "default data"
 print("Done!")  # Always reaches here
-
-import os
 
 # Check if we're in the right place
 print("Current directory:", os.getcwd())
